@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BoardFragmentTwo">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="425dp"
+        android:src="@drawable/board" />
+
+    <TextView
+        android:id="@+id/resultBoardTwo"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginTop="430dp"
+        android:gravity="center"
+        android:hint="Result"
+        android:textSize="30sp" />
+
+    <Button
+
+        android:id="@+id/startButtonTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="510dp"
+        android:gravity="center"
+        android:text="Start" />
+
+</FrameLayout>
