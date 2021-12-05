@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Veed/AndroidStudioProjects/EightQueens/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/Veed/AndroidStudioProjects/EightQueens/app/src/main/res/layout/activity_main.xml" value="0.2803030303030303" />
         <entry key="..\:/Users/Veed/AndroidStudioProjects/EightQueens/app/src/main/res/layout/activity_splash_screen.xml" value="0.22" />
+        <entry key="..\:/Users/Veed/AndroidStudioProjects/EightQueens/app/src/main/res/layout/cell_queen.xml" value="0.3625" />
         <entry key="..\:/Users/Veed/AndroidStudioProjects/EightQueens/app/src/main/res/layout/fragment_board_one.xml" value="0.33" />
         <entry key="..\:/Users/Veed/AndroidStudioProjects/EightQueens/app/src/main/res/layout/fragment_board_two.xml" value="0.33" />
         <entry key="..\:/Users/Veed/AndroidStudioProjects/EightQueens/app/src/main/res/layout/fragment_main.xml" value="0.29030797101449274" />

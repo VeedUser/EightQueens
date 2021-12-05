@@ -6,17 +6,17 @@
     app:startDestination="@id/mainFragment">
     <fragment
         android:id="@+id/boardFragmentOne"
-        android:name="com.example.eightqueens.BoardFragmentOne"
+        android:name="com.example.eightqueens.fragments.BoardFragmentOne"
         android:label="fragment_board_one"
         tools:layout="@layout/fragment_board_one" />
     <fragment
         android:id="@+id/boardFragmentTwo"
-        android:name="com.example.eightqueens.BoardFragmentTwo"
+        android:name="com.example.eightqueens.fragments.BoardFragmentTwo"
         android:label="fragment_board_two"
         tools:layout="@layout/fragment_board_two" />
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.eightqueens.MainFragment"
+        android:name="com.example.eightqueens.fragments.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action

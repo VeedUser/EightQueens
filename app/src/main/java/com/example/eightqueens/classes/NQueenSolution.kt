@@ -1,10 +1,9 @@
-package com.example.eightqueens
+package com.example.eightqueens.classes
 
-import android.widget.Button
 import java.util.ArrayList
 
  class NQueenSolution {
-
+     val resultQueen = result
     fun solveBoard(
 
         board: Array<CharArray>, row: Int,
