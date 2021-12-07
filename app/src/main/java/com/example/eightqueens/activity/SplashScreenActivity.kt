@@ -15,25 +15,12 @@ class SplashScreenActivity : AppCompatActivity() {
 
         setBackgroundSecond()
     }
-    fun setFirstBackground() {
-        val backgroundThread = object : Thread() {
-            override fun run() {
-                try {
-                    Thread.sleep(4000)
-                    val inte = Intent(baseContext, MainActivity::class.java)
-                    startActivity(inte)
-                } catch (e: Exception) {
-                    e.printStackTrace()
-                }
-            }
-        }
-        backgroundThread.start()
-    }
+
     fun setBackgroundSecond() {
         handler = Handler()
         handler.postDelayed({
             val inte = Intent(this, MainActivity::class.java)
             startActivity(inte)
-        }, 4000)
+        }, 2000)
     }
 }

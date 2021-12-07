@@ -10,29 +10,20 @@ import com.example.eightqueens.R
 
 class MainFragment : Fragment(R.layout.fragment_main) {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         view.findViewById<TextView>(R.id.startButtonOne).setOnClickListener {
-            findNavController().navigate(R.id.boardFragmentOne)
-
+            timeToShowBoard(size = 4)
         }
         view.findViewById<TextView>(R.id.startButtonTwo).setOnClickListener {
-            findNavController().navigate(R.id.boardFragmentTwo)
-
+            timeToShowBoard(size = 8)
         }
-
-
-
-
-
-
-
-    }
     }
 
+    private fun timeToShowBoard(size: Int) {
+        val action = MainFragmentDirections.actionMainFragmentToBoardFragmentOne().setSizeBoard(size)
+        findNavController().navigate(action)
+    }
+}

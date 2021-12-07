@@ -1,31 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/navigation"
-    app:startDestination="@id/mainFragment">
-    <fragment
-        android:id="@+id/boardFragmentOne"
-        android:name="com.example.eightqueens.fragments.BoardFragmentOne"
-        android:label="fragment_board_one"
-        tools:layout="@layout/fragment_board_one" />
-    <fragment
-        android:id="@+id/boardFragmentTwo"
-        android:name="com.example.eightqueens.fragments.BoardFragmentTwo"
-        android:label="fragment_board_two"
-        tools:layout="@layout/fragment_board_two" />
-    <fragment
-        android:id="@+id/mainFragment"
-        android:name="com.example.eightqueens.fragments.MainFragment"
-        android:label="fragment_main"
-        tools:layout="@layout/fragment_main" >
-        <action
-            android:id="@+id/action_mainFragment_to_boardFragmentOne2"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/navigation"
+            app:startDestination="@id/mainFragment">
 
-            app:destination="@id/boardFragmentOne" />
+    <fragment
+            android:id="@+id/mainFragment"
+            android:name="com.example.eightqueens.fragments.MainFragment"
+            android:label="fragment_main"
+            tools:layout="@layout/fragment_main">
         <action
-            android:id="@+id/action_mainFragment_to_boardFragmentTwo"
-            app:destination="@id/boardFragmentTwo"
-                                                />
+                android:id="@+id/action_mainFragment_to_boardFragmentOne"
+                app:destination="@id/boardFragmentOne">
+            <argument
+                    android:name="sizeBoard"
+                    app:argType="integer"
+                    android:defaultValue="4" />
+
+        </action>
     </fragment>
+
+    <fragment
+            android:id="@+id/boardFragmentOne"
+            android:name="com.example.eightqueens.fragments.BoardFragmentOne"
+            android:label="fragment_board_one"
+            tools:layout="@layout/fragment_board_one">
+            <argument
+                    android:name="sizeBoard"
+                    app:argType="integer"
+                    android:defaultValue="4" />
+    </fragment>
+
+
 </navigation>
