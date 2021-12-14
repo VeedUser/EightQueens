@@ -11,8 +11,8 @@
             android:label="fragment_main"
             tools:layout="@layout/fragment_main">
         <action
-                android:id="@+id/action_mainFragment_to_boardFragmentOne"
-                app:destination="@id/boardFragmentOne">
+                android:id="@+id/action_mainFragment_to_boardFragment"
+                app:destination="@id/boardFragment">
             <argument
                     android:name="sizeBoard"
                     app:argType="integer"
@@ -22,8 +22,8 @@
     </fragment>
 
     <fragment
-            android:id="@+id/boardFragmentOne"
-            android:name="com.example.eightqueens.fragments.BoardFragmentOne"
+            android:id="@+id/boardFragment"
+            android:name="com.example.eightqueens.fragments.BoardFragment"
             android:label="fragment_board_one"
             tools:layout="@layout/fragment_board_one">
             <argument

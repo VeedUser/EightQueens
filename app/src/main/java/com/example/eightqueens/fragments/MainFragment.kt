@@ -17,13 +17,17 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         view.findViewById<TextView>(R.id.startButtonOne).setOnClickListener {
             timeToShowBoard(size = 4)
         }
+        view.findViewById<TextView>(R.id.startButton).setOnClickListener {
+            timeToShowBoard(size = 6)
+        }
         view.findViewById<TextView>(R.id.startButtonTwo).setOnClickListener {
             timeToShowBoard(size = 8)
         }
+
     }
 
     private fun timeToShowBoard(size: Int) {
-        val action = MainFragmentDirections.actionMainFragmentToBoardFragmentOne().setSizeBoard(size)
+        val action = MainFragmentDirections.actionMainFragmentToBoardFragment().setSizeBoard(size)
         findNavController().navigate(action)
     }
 }

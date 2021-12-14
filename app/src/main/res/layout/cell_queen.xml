@@ -10,12 +10,16 @@
         android:id="@+id/txtResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
         android:layout_marginTop="4dp"
         android:alpha="0.6"
         android:fontFamily="sans-serif-medium"
         android:text=""
         android:textColor="@color/black"
-        android:textSize="16dp" />
+        android:textSize="25dp"
+
+
+            />
 
 
 </LinearLayout>

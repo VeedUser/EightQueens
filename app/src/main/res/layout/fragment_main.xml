@@ -1,33 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".fragments.MainFragment">
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.MainFragment">
 
-   <ImageView
-       android:id="@+id/imageView"
-       android:layout_width="match_parent"
-       android:layout_height="425dp"
-       android:src="@drawable/board" />
+    <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="425dp"
+            android:src="@drawable/board" />
 
 
+    <Button
+
+            android:id="@+id/startButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="510dp"
+            android:gravity="center"
+            android:text="@string/_6x6"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            />
    <Button
 
-       android:id="@+id/startButtonOne"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:layout_marginTop="560dp"
-       android:gravity="center"
-       android:text="@string/_4x4"/>
-   <Button
+           android:id="@+id/startButtonOne"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="460dp"
+           android:gravity="center"
+           android:text="@string/_4x4"
+           android:layout_marginLeft="8dp"
+           android:layout_marginRight="8dp" />
 
-       android:id="@+id/startButtonTwo"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:layout_marginTop="510dp"
-       android:gravity="center"
-       android:text="@string/_8x8" />
+
+
+    <Button
+
+            android:id="@+id/startButtonTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="560dp"
+            android:gravity="center"
+            android:text="@string/_8x8"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp" />
 
 
 </FrameLayout>

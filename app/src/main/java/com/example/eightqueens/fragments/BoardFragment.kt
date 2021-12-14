@@ -14,10 +14,10 @@ import com.example.eightqueens.R
 import com.example.eightqueens.adapters.QueenAdapter
 
 
-class BoardFragmentOne : Fragment() {
+class BoardFragment : Fragment() {
 
     // Переменная для изьятия аргумента
-    val args: BoardFragmentOneArgs by navArgs()
+    val args: BoardFragmentArgs by navArgs()
 
     private var mAdapter: QueenAdapter? = null
 
@@ -68,8 +68,6 @@ class BoardFragmentOne : Fragment() {
             board, row, rowmask, ldmask,
             rdmask
         )
-
-        Log.d("111111111111", "$resultD")
 
         mAdapter?.setData(resultD.map { Queen(resultQueen = it.toString()) })
     }
