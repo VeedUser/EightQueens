@@ -1,7 +1,7 @@
 # EightQueens
 _____
 + В приложение присутствует:
-    + Activity
+    + два Activity
     + два фрагмента 
     + Adapter
     + Navigation
